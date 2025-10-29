@@ -3,6 +3,7 @@ import '@servicenow/now-loader';
 import '@servicenow/now-alert';
 import '@servicenow/now-card';
 import '@servicenow/now-dropdown';
+import { CAPACITY_NUM_ARR } from './constants';
 
 export default (state, { updateState, dispatch }) => {
 
@@ -115,8 +116,8 @@ export default (state, { updateState, dispatch }) => {
 												trigger: { 'aria-label': 'Select an item' },
 												panel: { 'aria-label': 'Assigned to' }
 											}}
-											items={[0, 1, 2, 3, 4, 5].map(capacity => ({ id: `${item.sys_id}|${capacity}`, label: String(capacity) }))}
-											selected-items={[`${item.sys_id}|${item.max_capacity}`]}
+											items={CAPACITY_NUM_ARR.map(capacity => ({ id: `${item.sys_id}|${capacity}`, label: String(capacity) }))}
+											selected-items={[`${item.sys_id}|${item.max_capacity ? item.max_capacity : item.applied_max_capacity}`]}
 											manage-selected-items
 											style={{
 												width: '80%',
