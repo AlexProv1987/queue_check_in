@@ -1,11 +1,3 @@
-/**
- * 
- * createCustomElement('cmhac-queue-checkin', {
-	renderer: {type: snabbdom},
-	view,
-	styles
-});
- */
 import {createCustomElement} from '@servicenow/ui-core';
 import snabbdom from '@servicenow/ui-renderer-snabbdom';
 import styles from './styles.scss';

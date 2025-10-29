@@ -30,7 +30,6 @@ export default (state, { updateState, dispatch }) => {
 						/>
 					)}
 				</div>
-				{/**error/success msgs here */}
 				<div className="header">
 					<div className="header-title">{pageTitle}
 						<span>
