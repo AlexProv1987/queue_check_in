@@ -3,4 +3,4 @@ export const USER_API_PATH = 'api/now/ui/user/current_user'
 export const UPDATE = 'update'
 export const RESET = 'reset'
 export const CHECK_OUT = 'check_out'
-export const CAPACITY_NUM_ARR = [0,1,2,4,5,6]
+export const CAPACITY_NUM_ARR = [0,1,2,3,4,5,6]
